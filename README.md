@@ -24,9 +24,13 @@ Install the necessary libraries and development packages:
 ```bash
 sudo apt update
 sudo apt install libgtk-3-dev libpcap-dev build-essential
-
+```
 COMPILATION
+```bash
 gcc packet_sniffer.c -o packet_sniffer `pkg-config --cflags --libs gtk+-3.0` -lpcap -lpthread
 
+```
 RUN
+```bash
 ./packet_sniffer
+```
